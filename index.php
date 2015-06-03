@@ -408,7 +408,7 @@ function hextobin($hexString) {
 }
 
 function mrovaRemoveCharacters($str) {
-	return trim(preg_replace('/ +/', '', preg_replace('/[^a-zA-Z0-9,\s]/', '', strip_tags($str))));
+	return trim(preg_replace('/ +/', ' ', preg_replace('/[^a-zA-Z0-9,\s]/', '', strip_tags($str))));
 }
 
 function mrova_debug($what) {
